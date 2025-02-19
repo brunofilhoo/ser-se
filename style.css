@@ -1,0 +1,23 @@
+body {
+  text-align: center;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+  border: 1px solid #000;
+  margin: 0 auto;
+  position: relative;
+}
+
+#Não {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+#Sim {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}

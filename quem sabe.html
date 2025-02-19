@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oii amor</title>
+  </head>
+
+  <style>
+    body {
+      background-color: rgba(74, 177, 160, 0.635);
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 100px;
+    }
+    h1 {
+      font-size: 36px;
+      color: #f36;
+    }
+    p {
+      font-size: 20px;
+      color: #333;
+    }
+    .heart {
+      color: #ff3366;
+      font-size: 60px;
+      position: relative;
+      top: -15px;
+    }
+    .heart-container {
+      display: flex;
+      justify-content: center;
+    }
+    .confetti {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #f00;
+      animation: confetti-fall 2s linear infinite;
+      transform: rotate(45deg);
+    }
+    @keyframes confetti-fall {
+      0% {
+        transform: translateY(0) rotate(45deg);
+      }
+      100% {
+        transform: translateY(200px) rotate(45deg);
+      }
+    }
+  </style>
+  <body>
+    <h1>
+      Parabéns! <span class="heart">&hearts;</span> Você aceitou<span
+        class="heart"
+        >&hearts;</span
+      >
+    </h1>
+    <div class="hearts-container">
+      <span class="heart">&hearts;</span>
+      <span class="heart">&hearts;</span>
+      <span class="heart">&hearts;</span>
+      <span class="heart">&hearts;</span>
+    </div>
+    <p>Agora estamos namorando, te amo amor.</p>
+  </body>
+</html>
