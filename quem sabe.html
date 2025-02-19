@@ -8,7 +8,7 @@
 
   <style>
     body {
-      background-color: rgba(74, 177, 160, 0.635);
+      background-color: rgba(60, 155, 179, 0.635);
       font-family: Arial, sans-serif;
       text-align: center;
       padding: 100px;
@@ -25,7 +25,6 @@
       color: #ff3366;
       font-size: 60px;
       position: relative;
-      top: -15px;
     }
     .heart-container {
       display: flex;
@@ -47,20 +46,50 @@
         transform: translateY(200px) rotate(45deg);
       }
     }
+    .heart {
+      position: absolute;
+      font-size: 24px;
+      color: red;
+      animation: float 5s infinite ease-in-out;
+    }
+    @keyframes float {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-500px) scale(1.5);
+        opacity: 0;
+      }
+    }
   </style>
   <body>
     <h1>
-      Parabéns! <span class="heart">&hearts;</span> Você aceitou<span
+      Parabéns,<span class="heart">❤️</span> você aceitou!!<span
         class="heart"
-        >&hearts;</span
+        >❤️</span
       >
     </h1>
     <div class="hearts-container">
-      <span class="heart">&hearts;</span>
-      <span class="heart">&hearts;</span>
-      <span class="heart">&hearts;</span>
-      <span class="heart">&hearts;</span>
+      <span class="heart">❤️</span>
+      <span class="heart">❤️</span>
+      <span class="heart">❤️</span>
+      <span class="heart">❤️</span>
     </div>
     <p>Agora estamos namorando, te amo amor.</p>
+    <script>
+      function createHeart() {
+        const heart = document.createElement('div');
+        heart.classList.add('heart');
+        heart.innerHTML = '❤️';
+        document.body.appendChild(heart);
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.animationDuration = Math.random() * 2 + 3 + 's';
+        heart.style.position = 'absolute';
+        heart.style.bottom = '0';
+        setTimeout(() => heart.remove(), 5000);
+      }
+      setInterval(createHeart, 300);
+    </script>
   </body>
 </html>
