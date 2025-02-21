@@ -4,8 +4,8 @@ body {
 .box {
   width: 200px;
   height: 200px;
-  background-color: lightblue;
-  border: 1px solid #000;
+  background-color: rgb(155, 203, 219);
+  border: 1px solid #000000;
   margin: 0 auto;
   position: relative;
 }
