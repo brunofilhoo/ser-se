@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     setTimeout(() => {
       naoButton.style.pointerEvents = 'auto';
-    }, 2000);
+    }, 100);
   });
 
   simButton.addEventListener('click', () => {
